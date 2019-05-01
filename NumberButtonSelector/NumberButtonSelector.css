@@ -1,0 +1,16 @@
+.ControlsAndrewLy\.NumberButtonSelector input[type=number]::-webkit-inner-spin-button, 
+.ControlsAndrewLy\.NumberButtonSelector input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0;  
+}
+
+.ControlsAndrewLy\.NumberButtonSelector input[type=number]::-webkit-outer-spin-button {
+    background: #666;
+    border: 0 solid #f00;
+    height: 24px;
+    width: 10px;
+    border-radius: 48px;
+    cursor: pointer;
+    opacity: 1;
+    -webkit-appearance: none;
+}
