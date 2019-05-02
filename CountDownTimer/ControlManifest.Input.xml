@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="ControlsAndrewLy" constructor="CountDownTimer" version="0.0.1" display-name-key="Countdown Timer Control" 
+  description-key="A simple countdown timer, takes a date as an input" control-type="standard" preview-image="img/preview.png">
+  
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="inputDate" display-name-key="Input Date" description-key="Input Date to be used for the countdown timer."
+    of-type="SingleLine.Text" usage="bound" required="true" />
+
+      <type-group name="numbers">
+        <type>DateAndTime.DateAndTime</type>
+        <type>DateAndTime.DateOnly</type>
+      </type-group>
+      
+    <resources>
+      <code path="index.ts" order="1"/>
+      
+      <css path="css/CountDownTimer.css" order="1" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <resx path="strings/CountDownTimer.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+  </control>
+</manifest>
