@@ -1,0 +1,16 @@
+.ControlsAndrewLy\.CountDownTimer .digit {
+    color:#aaa;
+    font-size: 32px;
+ }
+
+ .ControlsAndrewLy\.CountDownTimer .digit-separator {
+    color:#aaa;
+    font-size: 20px;
+    padding-right: 18px;
+ }
+
+ .ControlsAndrewLy\.CountDownTimer .pastdate {
+    color: #ff0000;
+    font-size: 32px;    
+ }
+ 
