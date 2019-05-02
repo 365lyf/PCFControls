@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="ControlsAndrewLy" constructor="NumberButtonSelector" version="0.0.1" display-name-key="NumberButtonSelector_Display_Key" description-key="NumberButtonSelector_Desc_Key" control-type="standard">
+  <control namespace="ControlsAndrewLy" constructor="NumberButtonSelector" version="0.0.1" display-name-key="ControlsAndrewLy.NumberButtorSelector" description-key="NumberButtonSelector_Desc_Key" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="numberInputValue" display-name-key="numberInputValue_Display_Key" description-key="numberInputValue_Desc_Key" of-type="Whole.None" usage="bound" required="true" />
+    <property name="numberInputValue" display-name-key="Input Value" description-key="A number field with a plus and minus button.  This is similar to the OOTB Increment control but with different styling." of-type="Whole.None" usage="bound" required="true" />
+    <property name="incrementValue" display-name-key="Increment Value" description-key="Default is increment/decrement by 1, change if necessary" of-type="Whole.None" usage="input" required="false" />
 
        <!-- Only accepts whole numbers at this stage 
       <type-group name="numbers">

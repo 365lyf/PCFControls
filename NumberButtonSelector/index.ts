@@ -51,8 +51,13 @@ export class NumberButtonSelector implements ComponentFramework.StandardControl<
 	 */
 	public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container:HTMLDivElement)
 	{
-		// set our increment value (later we'll parameterize this)
+		// the increment value defaults to 1 if no increment input is detected, or it is zero.
 		this._incrementValue = 1;
+		if(context.parameters.incrementValue != null){
+			if(context.parameters.incrementValue.raw != 0){
+				this._incrementValue = context.parameters.incrementValue.raw;
+			}
+		}
 
 
 		// Add control initialization code
@@ -143,6 +148,7 @@ export class NumberButtonSelector implements ComponentFramework.StandardControl<
 		}
 		
 	}
+
 
 	/** 
 	 * Called when the control is to be removed from the DOM tree. Controls should use this call for cleanup.
