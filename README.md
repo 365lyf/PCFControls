@@ -31,3 +31,13 @@ It will output a solution file to your publishing directory/out/debug folder
 # Upload to D365
 
 Upload, and use as you would any other control.  i.e. goto a form, add an element, click on properties, then control, then add custom control.
+
+
+# Tips for New Players
+
+After deployment, ensure you increment the version number of the solution otherwise the changes won't be reflected within Dynamics.
+e.g. version="0.0.1" becomes version="0.0.2" in your manifest file.
+  <control namespace="ControlsAndrewLy" constructor="CountDownTimer" version="0.0.2" display-name-key="Countdown Timer Control" 
+  description-key="A simple countdown timer, takes a date as an input" control-type="standard">
+  
+Do not include an img/preview.png at this stage, it will fail deployment.  Bug noted.
