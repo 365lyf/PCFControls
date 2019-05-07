@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
+<!--  bug with img/preview at the moment, had to remove preview-image tag 
   <control namespace="ControlsAndrewLy" constructor="CountDownTimer" version="0.0.1" display-name-key="Countdown Timer Control" 
-  description-key="A simple countdown timer, takes a date as an input" control-type="standard" preview-image="img/preview.png">
+  description-key="A simple countdown timer, takes a date as an input" control-type="standard" preview-image="img/preview.png">-->
+  <control namespace="ControlsAndrewLy" constructor="CountDownTimer" version="0.0.2" display-name-key="Countdown Timer Control" 
+  description-key="A simple countdown timer, takes a date as an input" control-type="standard">
   
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="inputDate" display-name-key="Input Date" description-key="Input Date to be used for the countdown timer."
-    of-type="SingleLine.Text" usage="bound" required="true" />
+    of-type-group="date" usage="bound" required="true"/>
+    
+    <type-group name="date">
+      <type>DateAndTime.DateOnly</type>
+      <type>DateAndTime.DateAndTime</type>
+    </type-group>
+    
+    
+
+    <!-- still trying to figure out how to do both date only and date and time.
+    <property name="inputDate" display-name-key="Input Date" description-key="Input Date to be used for the countdown timer."
+    of-type="DateAndTime.DateAndTime" usage="bound" required="true" />
+    
 
       <type-group name="numbers">
         <type>DateAndTime.DateAndTime</type>
         <type>DateAndTime.DateOnly</type>
       </type-group>
-      
+    -->  
     <resources>
       <code path="index.ts" order="1"/>
       

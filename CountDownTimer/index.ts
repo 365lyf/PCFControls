@@ -137,7 +137,7 @@ export class CountDownTimer implements ComponentFramework.StandardControl<IInput
 	 */
 	public refreshData() {
 				
-		this._value = (this.inputElement.value as any) as Date;		
+		this._value = new Date(this.inputElement.value);		
 		this._notifyOutputChanged();
 		this.recalculateTimer();
 	}
@@ -227,8 +227,8 @@ export class CountDownTimer implements ComponentFramework.StandardControl<IInput
 	 */
 	public getOutputs(): IOutputs
 	{
-		return {
-			inputDate: this._value.toString()
+		return {			
+			inputDate: this._value
 		}
 	}
 
