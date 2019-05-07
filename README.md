@@ -5,6 +5,7 @@ Just a repo of controls that might be useful to the community.  I'm building out
 Catalogue so far includes:
 * Number Button Selector (a simple incrementor that has plus/minus buttons)
 * Countdown Timer (a simple countdown timer showing days/hours/minutes/seconds until date)
+* Keybinding Example (allows you to create a keyboard shortcut, and assign an action to it)
 
 # To Build
 Set up your environment as per the following DOCS article:
