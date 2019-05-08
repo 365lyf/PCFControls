@@ -1,0 +1,35 @@
+.ControlsAndrewLy\.NotificationPulsing .box {
+  width: 100%;
+  height: auto;
+  background: #347fc3;
+}
+
+.ControlsAndrewLy\.NotificationPulsing a {
+  text-align: center;
+  color: #fff;
+  padding: 6px 0 6px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  /* // it should inherift this anyhow
+  font-family: 'SegoeUI', 'Segoe UI';  
+  */
+  text-decoration: none;
+  display:block;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ControlsAndrewLy\.NotificationPulsing .animated {
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+
+.ControlsAndrewLy\.NotificationPulsing .pulse {
+  animation-name: pulse;
+  animation-duration: 1.8s;
+}
