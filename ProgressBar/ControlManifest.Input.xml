@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="ControlsAndrewLy" constructor="ProgressBar" version="0.0.6" display-name-key="Progress Bar Control" 
+  description-key="Displays a simple progress bar that represent a percentage of work complete" control-type="standard">
+  
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="inputProgressPercentage" display-name-key="Percentage" description-key="Provide a value between 0 and 100" of-type-group="numbers" usage="bound" required="true" />
+    
+    
+      <type-group name="numbers">
+        <type>Whole.None</type>        
+        <type>FP</type>
+        <type>Decimal</type>
+      </type-group>
+
+      
+    <resources>
+      <code path="index.ts" order="1"/>      
+      <css path="css/ProgressBar.css" order="1" />
+      <!--
+      <resx path="strings/ProgressBar.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+  </control>
+</manifest>
