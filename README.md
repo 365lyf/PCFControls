@@ -6,6 +6,7 @@ Catalogue so far includes:
 * Number Button Selector (a simple incrementor that has plus/minus buttons)
 * Countdown Timer (a simple countdown timer showing days/hours/minutes/seconds until date)
 * Keybinding Example (allows you to create a keyboard shortcut, and assign an action to it)
+* Progress Bar (takes a percentage value and represents this as a progress bar)
 
 # To Build
 Set up your environment as per the following DOCS article:
@@ -26,6 +27,10 @@ Reference your solution.
   
 Run the following.
 "msbuild /t:restore" followed by then "msbuild"  (this step needs to be done within Developer Command Prompt for VS)
+Note: for further information on what this command actually does:
+https://docs.microsoft.com/en-us/nuget/reference/msbuild-targets#restore-target
+
+
 
 It will output a solution file to your publishing directory/out/debug folder
 
