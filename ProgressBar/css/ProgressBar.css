@@ -1,0 +1,57 @@
+/* PROGRESS BAR - BASE */
+.ControlsAndrewLy\.ProgressBar .meter { 
+	height: 12px;
+	position: relative;
+	background: #DCE0E3;
+    border-radius: 8px;
+}
+.ControlsAndrewLy\.ProgressBar .dark {
+  background: #4D575F;
+}
+.ControlsAndrewLy\.ProgressBar .meter > span {
+	display: block;
+	height: 100%;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	background-color: #6BB438;
+	position: relative;
+	overflow: hidden;
+}
+.ControlsAndrewLy\.ProgressBar .meter > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #56aa1c), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, #56aa1c), color-stop(.75, #56aa1c), color-stop(.75, transparent), to(transparent));
+	background-image: -webkit-linear-gradient(-45deg, #56aa1c 25%, transparent 25%, transparent 50%, #56aa1c 50%, #56aa1c 75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, #56aa1c 25%, transparent 25%, transparent 50%, #56aa1c 50%, #56aa1c 75%, transparent 75%, transparent);
+	background-image: -ms-linear-gradient(-45deg, #56aa1c 25%, transparent 25%, transparent 50%, #56aa1c 50%, #56aa1c 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(-45deg, #56aa1c 25%, transparent 25%, transparent 50%, #56aa1c 50%, #56aa1c 75%, transparent 75%, transparent);
+	z-index: 1;
+	-webkit-background-size: 20px 20px;
+	-moz-background-size:    20px 20px;
+	background-size:         20px 20px;
+	-webkit-animation: move 2s linear infinite;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	overflow: hidden;
+}
