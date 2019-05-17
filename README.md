@@ -51,4 +51,5 @@ e.g. version="0.0.1" becomes version="0.0.2" in your manifest file.
 
 * To get the enable/disabled status of a control, this information is available from context.Mode.isControlDisabled.
 
+* React components aren't supported for framework components yet. This is due to the way React components would get added to the host React app, basically as a disconnected DOM tree which could lead to a lot of unforseen issues. We are actively working on a good solution for React support, and hope to have good news in this area soon. (Greg Hurlman)
 
