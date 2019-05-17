@@ -42,9 +42,13 @@ Upload, and use as you would any other control.  i.e. goto a form, add an elemen
 
 # Tips for New Players
 
-After deployment, ensure you increment the version number of the solution otherwise the changes won't be reflected within Dynamics.
+* After deployment, ensure you increment the version number of the solution otherwise the changes won't be reflected within Dynamics.
 e.g. version="0.0.1" becomes version="0.0.2" in your manifest file.
   <control namespace="ControlsAndrewLy" constructor="CountDownTimer" version="0.0.2" display-name-key="Countdown Timer Control" 
   description-key="A simple countdown timer, takes a date as an input" control-type="standard">
   
-Do not include an img/preview.png at this stage, it will fail deployment.  Bug noted.
+* Do not include an img/preview.png at this stage, it will fail deployment.  Bug noted.
+
+* To get the enable/disabled status of a control, this information is available from context.Mode.isControlDisabled.
+
+
