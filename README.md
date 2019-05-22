@@ -55,3 +55,5 @@ e.g. version="0.0.1" becomes version="0.0.2" in your manifest file.
 
 * In the Keybinding example, it will show a js error message "Refused to get Unsafe Headers".   This is a known bug with the D365 platform, and being tracked currently (Internal Bug ID: 1339680).
 
+* Do not build controls that access XRM API (e.g. Xrm.Page.getAttribute("name")), keep the control generic by creating an input variable and passing the value in.
+
