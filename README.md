@@ -8,6 +8,7 @@ Catalogue so far includes:
 * Keybinding Example (allows you to create a keyboard shortcut, and assign an action to it)
 * Progress Bar (takes a percentage value and represents this as a progress bar)
 * Notification - Pulsing (this takes a string, and then pulses the message against a blue background)
+* Button Icon Example (an example of how to use an icon within a button using font-awesome and importing external resources)
 
 # To Build
 Set up your environment as per the following DOCS article:
