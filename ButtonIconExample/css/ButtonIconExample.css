@@ -1,0 +1,23 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css";
+
+/* PROGRESS BAR - BASE */
+.ControlsAndrewLy\.ButtonIconExample .btn { 
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* PROGRESS BAR - BASE */
+.ControlsAndrewLy\.ButtonIconExample .blue { 
+    background-color: DodgerBlue;
+}
+
+.ControlsAndrewLy\.ButtonIconExample .pink {
+    background-color: pink;
+ }
+  
+ .ControlsAndrewLy\.ButtonIconExample  .green {
+    background-color: green;
+ }
