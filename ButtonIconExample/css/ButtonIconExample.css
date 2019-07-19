@@ -1,6 +1,6 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css";
 
-/* PROGRESS BAR - BASE */
+/* BUTTON ICON EXAMPLE - BASE */
 .ControlsAndrewLy\.ButtonIconExample .btn { 
     border: none;
     color: white;
@@ -9,7 +9,6 @@
     cursor: pointer;
 }
 
-/* PROGRESS BAR - BASE */
 .ControlsAndrewLy\.ButtonIconExample .blue { 
     background-color: DodgerBlue;
 }
