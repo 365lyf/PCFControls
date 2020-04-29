@@ -9,6 +9,21 @@ export class MainFormDialog implements ComponentFramework.StandardControl<IInput
 	 * 
 	 * Dependencies.
 	 * npm install --save @types/xrm
+	 * 
+	 * ^ note definitions for navigateTo have not been updated in current 9.25.0 version of XRM types.  You'll need to manually add the following to @types/xrm/index.d.ts:
+	 * 
+	 *         navigateTo(pageInput: Navigation.PageInputEntityList | Navigation.PageInputHtmlWebResource | Navigation.PageInputEntityRecord, navigationOptions?: Navigation.NavigationOptions): Async.PromiseLike<any>;
+	 * 
+	 * and
+	 * 
+	 *         interface PageInputEntityRecord{
+     *            pageType: "entityrecord";
+     *            entityName: string;
+     *            entityId?: string;
+     *            formType?: number;
+     *          }
+	 * 
+	 * 
 	 */
 
 
