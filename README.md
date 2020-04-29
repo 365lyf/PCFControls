@@ -10,6 +10,7 @@ Catalogue so far includes:
 * Notification - Pulsing (this takes a string, and then pulses the message against a blue background)
 * Button Icon Example (an example of how to use an icon within a button using font-awesome and importing external resources)
 * Youtube Player (as it says)
+* Main Form Dialog Example (opens an account form without losing context of previously opened record)
 
 # To Build
 Set up your environment as per the following DOCS article:
