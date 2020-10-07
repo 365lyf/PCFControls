@@ -74,7 +74,7 @@ export class IconBuilder implements ComponentFramework.StandardControl<IInputs, 
 
 		// set a element (title)
 		this.label_element.innerHTML = this._title;
-		this.label_element.setAttribute("style", "font-size: " + this._fontsize + "px; color: " + this._fontcolor);				
+		this.label_element.setAttribute("style", "text-align: center; font-size: " + this._fontsize + "px; color: " + this._fontcolor);				
 		this._container.appendChild(this.label_element);
 
 
@@ -111,7 +111,7 @@ export class IconBuilder implements ComponentFramework.StandardControl<IInputs, 
 		 this.i_element.setAttribute("class", this._fa_classname);			   
 		 this.i_element.setAttribute("style", "font-size: " + this._iconsize + "px; color: " + this._fontcolor);			   	 		
 		 this.label_element.innerHTML = this._title;
-	     this.label_element.setAttribute("style", "font-size: " + this._fontsize + "px; color: " + this._fontcolor);		
+	     this.label_element.setAttribute("style", "text-align: center; font-size: " + this._fontsize + "px; color: " + this._fontcolor);		
 
 		 // set notification bubble
 		 this.noti_span_element.innerHTML = this._notifycount.toString();
