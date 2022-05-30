@@ -79,7 +79,7 @@ export class ProgressBar implements ComponentFramework.StandardControl<IInputs, 
 		let instanceName = this._meterspan.parentElement?.parentElement?.parentElement?.className;
 	
 		// ANIMATE PROGRESS BAR FILL
-		$(".meter > span").each(function() {
+		$(instanceName + " .meter > span").each(function() {
 			$(this)
 				.data("origWidth", $(this).width() as number)
 				.width(0)
