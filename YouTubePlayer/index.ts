@@ -67,7 +67,7 @@ export class YoutubePlayer implements ComponentFramework.StandardControl<IInputs
 		this.videoIFrame.setAttribute("src", context.parameters.videoURL.formatted ? context.parameters.videoURL.formatted : "");
 		this.inputField.value = context.parameters.videoURL.formatted ? context.parameters.videoURL.formatted : "";
 
-		console.log("Youtube src changed to " + this.videoIFrame.src);
+		console.log("Youtube\Vimeo src changed to " + this.videoIFrame.src);
 		
 	}
 
