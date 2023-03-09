@@ -2,7 +2,7 @@
 <manifest>
   <control namespace="ControlsAndrewLy" constructor="YoutubePlayer" version="0.0.1" display-name-key="YoutubePlayer" description-key="YoutubePlayer description" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="videoURL" display-name-key="Youtube Video URL" description-key="Embed URL for the youtube video (e.g. https://www.youtube.com/embed/I-LyYSAVBdQ )" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="videoURL" display-name-key="Youtube Video URL" description-key="Embed URL for the youtube/vimeo video (e.g. https://www.youtube.com/embed/**yourvideonumberhere** or https://player.vimeo.com/video/**yourvideonumberhere**)" of-type="SingleLine.Text" usage="bound" required="true" />
     
     <resources>
       <code path="index.ts" order="1"/>
