@@ -11,7 +11,7 @@ Catalogue so far includes:
 * Progress Bar (takes a percentage value and represents this as a progress bar)
 * Notification - Pulsing (this takes a string, and then pulses the message against a blue background)
 * Button Icon Example (an example of how to use an icon within a button using font-awesome and importing external resources)
-* Youtube Player (as it says)
+* Youtube Player (updated to also support Vimeo Videos)
 * Main Form Dialog Example (opens an account form without losing context of previously opened record)
 
 # To Build
